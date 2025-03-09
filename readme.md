@@ -66,7 +66,7 @@ Untuk menjalankan dashboard interaktif berbasis Streamlit, jalankan perintah ber
 
 Kemudian buka browser dan akses http://localhost:8501/ untuk melihat dashboard.
 
-Ataupun bisa diakses dari URL berikut : [Akses Streamlit]().
+Ataupun bisa diakses dari URL berikut : [Akses Streamlit](https://latihan-visualisasi-data-mkxd3axwwgpeekroy5ezbu.streamlit.app/).
 
 
 ## Hasil Analisis
