@@ -68,18 +68,6 @@ Kemudian buka browser dan akses http://localhost:8501/ untuk melihat dashboard.
 
 Ataupun bisa diakses dari URL berikut : [Akses Streamlit]().
 
-Struktur Proyek
-
-├── dashboard/              # Folder untuk dashboard interaktif
-│   ├── dashboard.py        # Script utama untuk Streamlit
-│   ├── products_dataset.csv # Dataset yang digunakan dalam dashboard
-├── data/                   # Folder untuk menyimpan dataset mentah
-│   ├── order_items_dataset.csv
-│   ├── order_reviews_dataset.csv
-├── notebook.ipynb          # Notebook untuk analisis dan visualisasi data
-├── readme.md               # Dokumentasi proyek
-├── requirements.txt        # Daftar dependensi proyek
-├── url.txt                 # File berisi sumber dataset
 
 ## Hasil Analisis
 
