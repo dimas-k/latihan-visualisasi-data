@@ -60,7 +60,7 @@ import seaborn as sns
 ```
 3. Menjalankan Dashboard (Streamlit)
 
-Untuk menjalankan dashboard interaktif berbasis Streamlit, jalankan perintah berikut:
+Untuk menjalankan dashboard interaktif berbasis Streamlit di lokal, jalankan perintah berikut:
 
 `streamlit run dashboard/dashboard.py`
 
