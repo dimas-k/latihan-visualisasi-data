@@ -26,7 +26,7 @@ Jika tersedia dashboard interaktif dengan Streamlit:
 ```bash
 streamlit run dashboard.py
 ```
-ataupun melalui link ini :  [Dashboard Saya]()
+ataupun melalui link ini :  [Dashboard Saya](https://latihan-visualisasi-data-mkxd3axwwgpeekroy5ezbu.streamlit.app/)
 
 ## **Menggunakan `requirements.txt`**
 File `requirements.txt` berisi daftar pustaka Python yang diperlukan untuk menjalankan proyek ini. Untuk memastikan semua dependensi terinstal dengan benar, jalankan perintah berikut:
