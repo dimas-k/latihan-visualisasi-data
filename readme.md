@@ -1,102 +1,47 @@
-# Analisis Data 
+# **Analisis Data Penjualan E-Commerce**
 
-## Deskripsi Proyek
+## **Deskripsi Proyek**
+Proyek ini bertujuan untuk menganalisis data penjualan dari sebuah platform e-commerce dalam beberapa bulan terakhir. Fokus utama dari analisis ini adalah mengidentifikasi kategori produk terlaris, pola penjualan, serta faktor-faktor yang mempengaruhi harga dan keuntungan. Data yang digunakan mencakup informasi pesanan, produk, dan kategori produk.
 
-Proyek ini bertujuan untuk melakukan data wrangling dan eksplorasi visualisasi data guna memahami pola, tren, dan distribusi dari dataset yang digunakan. Analisis ini mencakup pembersihan data, transformasi, serta visualisasi berbagai aspek penting dari data.
+## **Dataset yang Digunakan**
+Dataset yang digunakan dalam analisis ini meliputi:
+- **orders.csv**: Data pesanan pelanggan beserta timestamp.
+- **order_items.csv**: Detail produk dalam setiap pesanan.
+- **products.csv**: Informasi produk termasuk kategori.
 
-## Fitur Utama
+## **Instalasi dan Penggunaan**
+Untuk menjalankan analisis ini, pastikan Anda memiliki Python dan pustaka berikut terinstal:
 
-1. Data Wrangling
-
-   - Pembersihan data (handling missing values, duplicates, dll.)
-
-   - Transformasi tipe data yang diperlukan
-
-   - Normalisasi atau standarisasi fitur
-
-2. Analisis Eksploratori Data (EDA)
-
-   - Statistik deskriptif
-
-   - Korelasi antar fitur numerik
-
-   - Distribusi data
-
-   - Distribusi berdasarkan kategori produk
-
-3. Visualisasi Data
-
-   - Heatmap untuk korelasi antar fitur numerik
-
-   - Histogram dan boxplot untuk melihat distribusi data
-
-   - Barplot untuk analisis berdasarkan kategori produk
-
-4. Dashboard Interaktif (Streamlit)
-
-   - Menampilkan ringkasan data dalam bentuk tabel dan grafik interaktif
-
-   - Navigasi data dengan fitur pagination
-
-   - Visualisasi kategori produk berdasarkan berat dan panjang produk
-
-   - Statistik deskriptif yang dapat diakses langsung dari dashboard
-
-## Instalasi dan Penggunaan
-
-1. Instalasi Dependensi
-
-Pastikan Python sudah terinstal di sistem Anda. Kemudian, instal dependensi yang diperlukan dengan perintah berikut:
-
-`pip install -r requirements.txt`
-
-2. Menjalankan Notebook
-
-Buka Jupyter Notebook atau Google Colab, lalu jalankan skrip utama untuk melakukan analisis data:
+```bash
+pip install -r requirements.txt
 ```
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+### **Menjalankan Notebook**
+1. Buka file notebook: `notebook.ipynb`
+2. Setiap sel sudah dijalankan dan siap untuk di analisis.
+
+### **Menjalankan Dashboard (Opsional)**
+Jika tersedia dashboard interaktif dengan Streamlit:
+
+```bash
+streamlit run dashboard.py
 ```
-3. Menjalankan Dashboard (Streamlit)
+ataupun melalui link ini :  [Dashboard Saya]()
 
-Untuk menjalankan dashboard interaktif berbasis Streamlit di lokal, jalankan perintah berikut:
+## **Menggunakan `requirements.txt`**
+File `requirements.txt` berisi daftar pustaka Python yang diperlukan untuk menjalankan proyek ini. Untuk memastikan semua dependensi terinstal dengan benar, jalankan perintah berikut:
 
-`streamlit run dashboard/dashboard.py`
+```bash
+pip install -r requirements.txt
+```
 
-Kemudian buka browser dan akses http://localhost:8501/ untuk melihat dashboard.
+Jika ada perubahan pustaka yang digunakan dalam proyek, Anda dapat memperbarui `requirements.txt` dengan perintah:
 
-Ataupun bisa diakses dari URL berikut : [Akses Streamlit](https://latihan-visualisasi-data-mkxd3axwwgpeekroy5ezbu.streamlit.app/).
+```bash
+pip freeze > requirements.txt
+```
 
-
-## Hasil Analisis
-
-1. Dataset telah berhasil dibersihkan dan diubah ke format yang lebih sesuai.
-
-2. Korelasi antar fitur menunjukkan adanya beberapa variabel yang memiliki hubungan erat.
-
-3. Distribusi data menunjukkan beberapa fitur memiliki skewness yang perlu diperhatikan.
-
-4. Analisis kategori produk memberikan wawasan tentang produk yang memiliki berat dan panjang terbesar.
-
-5. Dashboard interaktif memungkinkan eksplorasi lebih lanjut secara visual.
-
-## Deskripsi Dashboard
-
-Dashboard ini dibangun menggunakan Streamlit untuk memvisualisasikan hasil analisis data. Beberapa fitur utama dari dashboard meliputi:
-
-1. Tampilan Data Produk: Menampilkan tabel data dengan fitur navigasi halaman.
-
-2. Statistik Deskriptif: Menampilkan ringkasan statistik dataset.
-
-3. Visualisasi Produk Terberat: Menampilkan kategori produk dengan berat terbesar dalam bentuk bar chart.
-
-4. Visualisasi Produk Terpanjang: Menampilkan kategori produk dengan panjang terbesar dalam bentuk bar chart.
-
-5. Navigasi Interaktif: Pengguna dapat berpindah halaman data dengan tombol "Previous" dan "Next".
-
-## Kesimpulan
-
-Visualisasi data membantu dalam memahami pola dan distribusi yang ada dalam dataset. Hasil analisis ini dapat digunakan untuk pengambilan keputusan lebih lanjut, seperti strategi pemasaran atau optimasi model prediktif.
-
-Dashboard interaktif berbasis Streamlit memberikan pengalaman eksplorasi data yang lebih baik dengan kemudahan navigasi dan analisis mendalam.
+## **Hasil Analisis & Kesimpulan**
+- **Kategori Produk Terlaris:** Kategori dengan jumlah penjualan tertinggi dalam 6 bulan terakhir adalah *beleza_saude* dengan lebih dari 4.500 produk terjual, diikuti oleh *cama_mesa_banho* dan *utilidades_domesticas*.
+- **Pola Harga dan Keuntungan:** Produk dengan harga rata-rata tertinggi berasal dari kategori *pcs*, *portateis_casa_forno_e_cafe*, dan *eletrodomesticos_2*, dengan margin keuntungan yang juga relatif tinggi.
+- **Implikasi Bisnis:** Kategori dengan volume penjualan tinggi perlu dipertahankan dengan strategi pemasaran yang agresif, sementara kategori dengan margin keuntungan tinggi bisa menjadi peluang untuk peningkatan profitabilitas.
