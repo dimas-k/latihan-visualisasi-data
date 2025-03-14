@@ -45,7 +45,7 @@ else:
     else:
         st.dataframe(filtered_sales.head(10))
         
-        # Hitung selisih bulan antara tanggal mulai dan akhir
+        
         months_range = (end_date.year - start_date.year) * 12 + (end_date.month - start_date.month)
         
         # Visualisasi Kategori Produk Terlaris (6 Bulan)
